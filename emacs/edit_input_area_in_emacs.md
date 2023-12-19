@@ -21,7 +21,7 @@ Just the most basic configuration from the Readme.
 	(require 'atomic-chrome)
 	(atomic-chrome-start-server)
 	:config
-	;; Disable auto-update. In this case, you can apply the modifications to the browser with C-c C-s
+	;; Disable auto update. In this case, you can apply the modifications to the browser with C-c C-s
 	(setq atomic-chrome-enable-auto-update nil)
 	(setq atomic-chrome-default-major-mode 'markdown-mode)
 	(setq atomic-chrome-url-major-mode-alist
@@ -31,13 +31,12 @@ Just the most basic configuration from the Readme.
 	;; (setq atomic-chrome-extension-type-list '(atomic-chrome))
 	
 	)
-
 ```
 
 
 ## Install GhostText
 
-Install GhostText at [https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1](GhostText) 
+Install GhostText at [GhostText](https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1). 
 
 Uncheck the "Display notifications when connected and disconnected" which is annoying, but keep the "Bring the focus back to the browser when disconnected." which is useful.
 
