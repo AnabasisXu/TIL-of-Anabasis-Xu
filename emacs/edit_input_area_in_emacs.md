@@ -5,9 +5,9 @@ Today I need to use some simple HTML script in a reply to a GitHub issue. Tried 
 2. No support for surround editing for tags.
 3. Easy to mistype ESC, losing the focus on the editor. Then you have to click it to make focus come back to it.
 
-  * [ ] I used to have Firenvim which is quite nice, but now that most of my text editing happens in Emacs, I want to find an equivalent to Firenvim in Emacs. Turns out that [https://github.com/alpha22jp/atomic-chrome](alpha22jp/atomic-chrome: Edit text area on Chrome with Emacs using Atomic Chrome) + [https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1](GhostText) is exactly what I need.
+I used to have Firenvim which is quite nice, but now that most of my text editing happens in Emacs, I want to find an equivalent to Firenvim in Emacs. Turns out that [https://github.com/alpha22jp/atomic-chrome](alpha22jp/atomic-chrome: Edit text area on Chrome with Emacs using Atomic Chrome) + [https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1](GhostText) is exactly what I need.
 
-** Install atomic-chrome
+## Install atomic-chrome
 
 Just the most basic configuration from the Readme.
 
@@ -35,7 +35,7 @@ Just the most basic configuration from the Readme.
 ```
 
 
-** Install GhostText
+## Install GhostText
 
 Install GhostText at [https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1](GhostText) 
 
