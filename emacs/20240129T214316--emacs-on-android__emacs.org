@@ -1,0 +1,23 @@
+#+TITLE:      emacs on android
+#+DATE:       [2024-01-29 Mon 21:43]
+#+FILETAGS:   :emacs:
+#+IDENTIFIER: 20240129T214316
+#+SOURCE: 
+* Quick Comparison of GUI and Termux Emacs on Android
+I have been exploring the possiblity of using Emacs on my phone to make better use of my time on the metro. So far there is long way to perfection.
+** What does not work on Termux Emacs
+*** UI
+**** Posframe not working
+
+**** C-Prior&C-Next
+
+*** Org
+**** org capture protocol
+
+**** C-ret not working, as it is mapped to open org link
+** What does not work on GUI Emacs
+*** touch to display screen keyboard
+What a pity! For now I just have to use it with a physical keyboard.
+Even if the screen keyboard works, I still have to switch from English and CJK input. So perhaps the only right way to use Emacs on android is to use it with a physical keyboard.
+** What does not work on both
+*** cannot run org code blocks
