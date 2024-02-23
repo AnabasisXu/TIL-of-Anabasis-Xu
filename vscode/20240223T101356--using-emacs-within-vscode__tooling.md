@@ -1,9 +1,10 @@
+```metadata
 #+TITLE:      Using Emacs within VScode
 #+DATE:       [2024-02-23 Fri 10:13]
 #+FILETAGS:   :tooling:
 #+IDENTIFIER: 20240223T101356
 #+SOURCE: 
-
+```
 
 I recently started to learn web development with Emacs. Emmet-mode has been great, until one day it reports:
 
