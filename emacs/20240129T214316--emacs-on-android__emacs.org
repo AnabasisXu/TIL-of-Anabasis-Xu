@@ -1,23 +1,24 @@
-#+TITLE:      emacs on android
+#+TITLE:      Emacs on Android
 #+DATE:       [2024-01-29 Mon 21:43]
 #+FILETAGS:   :emacs:
 #+IDENTIFIER: 20240129T214316
 #+SOURCE: 
-* Quick Comparison of GUI and Termux Emacs on Android
-I have been exploring the possiblity of using Emacs on my phone to make better use of my time on the metro. So far there is long way to perfection.
+
+* Quick Comparison between GUI and Termux Emacs on Android
+I have been exploring the possibility of using Emacs on my phone to make better use of my time on the metro. Emacs on Android has a long way to go. I have read the article [[https://lwn.net/Articles/936576/][Emacs for Android [LWN.net]]], in which the current maintainer of Emacs showed reluctancy towards merging the Android code. 
+In the following, I mark a few observations of what works and what does not work on Android. My greatest surprise is that the org-capture protocol works. I use the Kiwi browser with Surfingkeys. However， it only works with a physical keyboard.
+
 ** What does not work on Termux Emacs
 *** UI
-**** Posframe not working
-
-**** C-Prior&C-Next
+**** Posframe
+**** The keybinding of C-Prior and C-Next, which I bind to (centaur-tabs-forward) and (centaur-tabs-backward).
 
 *** Org
-**** org capture protocol
-
-**** C-ret not working, as it is mapped to open org link
+**** org-capture protocol
+**** C-ret not working, as it is mapped to the "open org link".
 ** What does not work on GUI Emacs
-*** touch to display screen keyboard
-What a pity! For now I just have to use it with a physical keyboard.
-Even if the screen keyboard works, I still have to switch from English and CJK input. So perhaps the only right way to use Emacs on android is to use it with a physical keyboard.
+*** Touch to display screen keyboard
+For now, I have to use it with a physical keyboard.
+Even if the screen keyboard works, I still have to switch from English and CJK input. So perhaps the only right way to use Emacs on Android is to use it with a physical keyboard.
 ** What does not work on both
-*** cannot run org code blocks
+*** org code blocks

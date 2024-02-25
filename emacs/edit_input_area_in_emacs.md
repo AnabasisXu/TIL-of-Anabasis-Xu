@@ -1,7 +1,8 @@
-## Atomic-chrome + GhostText for great editing experience in Chromium
+# Atomic-chrome + GhostText for great editing experience in Chromium
 
-Today I need to use some simple HTML script in a reply to a GitHub issue. Tried the built-in ACE editor of [Surfingkeys](https://chromewebstore.google.com/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc). Having a Vim editor directly in your browser is nice, I but two things are bugging me:
-1. The text area is too small
+Today I need to write some simple HTML script in a reply to a GitHub issue. Tried the built-in ACE editor of [Surfingkeys](https://chromewebstore.google.com/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc). Having a Vim editor directly in your browser is nice, I but two things are bugging me:
+
+1. The text area is too small.
 2. No support for surround editing for tags.
 3. Easy to mistype ESC, losing the focus on the editor. Then you have to click it to make focus come back to it.
 
@@ -33,13 +34,10 @@ Just the most basic configuration from the Readme.
 	)
 ```
 
-
 ## Install GhostText
 
-Install GhostText at [GhostText](https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1). 
+Install GhostText at [GhostText](https://chromewebstore.google.com/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca?pli=1).
 
 Uncheck the "Display notifications when connected and disconnected" which is annoying, but keep the "Bring the focus back to the browser when disconnected." which is useful.
 
 I use Surfingkeys in which one goes to the editing area by Ctrl+i, so I set up the shortcut for activating GhostText to Alt+i to keep the flow.
-
-
