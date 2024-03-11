@@ -1,0 +1,42 @@
+#+TITLE:      Change your Windows Program Management with Scoop
+#+DATE:       [2024-03-01 Fri 13:46]
+#+FILETAGS:   :tooling:
+#+IDENTIFIER: 20240301T134641
+#+SOURCE: 
+* Install Scoop with PowerShell
+[[https://scoop.sh/][Scoop]]
+* Install Apps
+A common situation for new users of Scoop is that they have installed the program and need to install it with Scoop. Make sure to check the version of the program.
+
+For example, after installing =fd=, its version will be shown:
+
+#+begin_src shell
+Installing 'fd' (9.0.0) [64bit] from main bucket
+fd-v9.0.0-x86_64-pc-windows-msvc.zip (1.2 MB) [===============================================================] 100%
+Checking hash of fd-v9.0.0-x86_64-pc-windows-msvc.zip ... ok.
+Extracting fd-v9.0.0-x86_64-pc-windows-msvc.zip ... done.
+Linking ~\scoop\apps\fd\current => ~\scoop\apps\fd\9.0.0
+Creating shim for 'fd'.
+'fd' (9.0.0) was installed successfully!
+#+end_src
+** Check Versions
+Then check the version of =fd=:
+
+#+begin_src shell
+G:\fd --version
+fd 8.7.1
+#+end_src
+
+It means that =fd= has been installed and its directory added to the =PATH=. Search and delete =fd.exe= and then run `fd --version` again:
+
+#+begin_src shell
+G:\fd --version
+fd 9.0.0
+#+end_src
+** Check Whether Other Installed Versions Have Priority
+Also, remember to check whether any program relies on the path of the =exe= file that you delete. In my case, I installed vale.exe with Scoop and then deleted the old one installed at the path 'G:\vale\vale.exe'. However, I forgot to also update my vale setting on VS Code, which makes vale unavailable.
+
+* List Installed Apps
+#+begin_src shell
+scoop list
+#+end_src

@@ -1,0 +1,89 @@
+#+TITLE:      Why Surfingkeys is the only Chrome extension you need
+#+DATE:       [2024-03-08 Fri 07:30]
+#+FILETAGS:   :tooling:
+#+IDENTIFIER: 20240308T073008
+#+SOURCE: [[https://github.com/brookhong/Surfingkeys][brookhong/Surfingkeys: Map your keys for web surfing, expand your browser with javascript and keyboard.]]
+
+Over the years, the number of my Chrome extensions has grown to over a hundred. From time to time, I have to deactivate or remove some of them, partly worrying about the performance of Chrome, partly worrying about the safety threat they pose. It is also annoying that I sometimes can not remember the name of an extension. For example, sometimes I need to copy all the URLs of a web page. For that, I installed the extension "Image Link Grabber." Yet every time I want to use that extension, I will search for "Image URL." Even if I remember its name correctly, the fact that I need to install a particular extension for a particular function is less than ideal for me. 
+
+I have been using Surfingkeys before I went anywhere deep into JavaScript. Back then, my primary interest is the keyboard-centered approach to web navigation. I have always been interested in the idea of "expanding your browser with JavaScript," but the document of Surfingkeys only gives some rudimentary examples. Shortly after I started learning web development, I searched for how to write JavaScript scripts to do that. That led to the discovery of some amazing configurations that changed the way I use Surfingkeys.
+
+Back to the example of copying all the image URLs of a page. To copy all the image URLs, you can get all the elements with the tag =img= and then push their =src= to =imageLinks=.
+
+
+ #+begin_src javascript
+ ////////////////////////////////////////////////////////////////////////////////////////////////
+// Copy all img links                                                                 //
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+api.mapkey("ymi", "#7Copy all img URLs to the clipboard", function() {
+
+var images = document.getElementsByTagName('img');
+var imageLinks = [];
+
+for (var i = 0; i < images.length; i++) {
+    imageLinks.push(images[i].src);
+}
+
+Clipboard.write(imageLinks.join("\n"));
+});
+
+ #+end_src
+
+
+When you get all the image URLs, you may still have to filter the specific format you want. To save you that trouble, you can modify the above function to allow you to choose what format you want. First, create a prompt to choose the format you need, then check whether the link in =src= ends with it.
+
+#+begin_src javascript
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Copy specific img formats                                                    //
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+api.mapkey("ymg", "#7choose and then copy all URLs to the clipboard", function() {
+
+var images = document.getElementsByTagName('img');
+
+var format = prompt("Choose what format to copy (available: jpg, png, gif, webp）：");
+
+var imageLinks = [];
+
+for (var i = 0; i < images.length; i++) {
+    var src = images[i].src;
+    if (src.endsWith("." + format)) {
+        imageLinks.push(src);
+    }
+}
+Clipboard.write(imageLinks.join("\n"));
+});
+
+#+end_src
+
+Now, not only can I do what =Image Link Grabber= does, but I can do it better.
+
+I can also extend this function to copy all PDF links, which I use to achieve with =DownThemAll=.
+
+ #+begin_src javascript
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////
+// Copy all pdf links                                                                  //
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+api.mapkey("ymp", "#7Copy all pdf URLs to the clipboard", function() {
+		
+var links = document.querySelectorAll('a');
+var pdfLinks = [];
+
+links.forEach(link => {
+    var href = link.getAttribute('href');
+    if (href && href.toLowerCase().endsWith('.pdf')) {
+        pdfLinks.push(href);
+    }
+});
+
+Clipboard.write(pdfLinks.join("\n"));
+});
+
+ #+end_src
+
+
+I like Surfingkeys for the same reason that I like Emacs: with great extensibility, they are not only tools but tools of tools. It gives you the option to keep better control of your browsing functionality without the need to install potentially dangerous extensions. Also like Emacs, Surfingkeys allow you both to create and look up shortcuts easily. Simple interface plus rich functions, Surfingkeys makes surfing the web with only keyboards so much better.

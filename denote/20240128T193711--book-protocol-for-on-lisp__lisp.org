@@ -1,0 +1,23 @@
+#+TITLE:      book protocol for On Lisp
+#+DATE:       [2024-01-28 Sun 19:37]
+#+FILETAGS:   :lisp:
+#+IDENTIFIER: 20240128T193711
+#+SOURCE: 
+
+* Book Protocol for On Lisp
+
+** The Book
+*** [[https://paulgraham.com/onlisp.html][On Lisp]]
+On PG's site
+*** [[https://www.lurklurk.org/onlisp/onlisp.html][Piecing Together a Printed Copy of "On Lisp"]]
+Currently the best option:
+fixed missing figures;
+PDF version with code highlights;
+
+*** Various Other Formats
+[[https://cliki.net/On+Lisp][CLiki: On Lisp]]
+The info version is no longer available.
+** Notes
+*** [[https://github.com/ashok-khanna/lisp-notes?tab=readme-ov-file#org77d32bb][ashok-khanna/lisp-notes: Repo for Common Lisp by Example and all other useful resources I found online]]
+** Discussions
+*** [[https://news.ycombinator.com/item?id=14842894][On LISP, by Paul Graham. LISP was the second language I learned in college, but ... | Hacker News]]

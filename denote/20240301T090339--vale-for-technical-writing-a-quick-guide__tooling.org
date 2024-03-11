@@ -1,0 +1,118 @@
+#+TITLE:      Vale for Technical Writing: A Quick Guide
+#+DATE:       [2024-03-01 Fri 09:03]
+#+FILETAGS:   :tooling:
+#+IDENTIFIER: 20240301T090339
+#+SOURCE: 
+* Vale
+One of the major problems in writing a technical document is to keep a consistent style. Styles guides such as Microsoft are over 1, 000 pages. The longer the style guides are, the less likely technical writers can stick to them. Even if they are short, it is still questionable that technical writers can find every possible stylistic mistake. Luckily, we now have = Vale the prose linter. Companies that have adopted Vale include Red Hat, Data Dog, and MeliSearch, and this list will only grow longer in the future.
+
+** Installation
+*** Install Vale
+Install =Vale= with an application manager such as =Scoop= or =Chocolatey= on Windows or =brew= on Mac makes =Vale= much easier to update. 
+
+#+begin_src shell
+scoop install vale
+#+end_src
+
+#+begin_src shell
+choco install vale
+#+end_src
+*** Check Vale Version
+
+#+begin_src shell
+vale -v
+#+end_src
+
+*** Update Vale
+#+begin_src shell
+scoop update vale
+#+end_src
+
+** Styles
+The best thing about Vale is that you can customize the styles you work with. A starting point can be found at [[https://github.com/errata-ai/packages][errata-ai/packages]] in which you can find the styles such as Google and Microsoft converted by the author of =Vale=. I also recommend checking out the Vale styles that are in production and updated frequently.
+
+*** Google
+[[https://github.com/errata-ai/Google][errata-ai/Google: A Vale-compatible implementation of the Google Developer Documentation Style Guide.]]
+
+*** Microsoft
+[[https://github.com/errata-ai/Microsoft][errata-ai/Microsoft: A Vale-compatible implementation of the Microsoft Writing Style Guide.]]
+*** MeiliSearch
+[[https://github.com/meilisearch/documentation][meilisearch/documentation: Meilisearch documentation]]
+*** DataDog
+[[https://github.com/DataDog/datadog-vale][DataDog/datadog-vale: Documentation Style Guide for the Vale Linter. Owned and maintained by the DataDog Docs team.]]
+*** Red Hat
+[[https://stylepedia.net/][Red Hat Style Guide]]
+** Configurations
+*** Choose File Format
+
+To check only one format:
+#+begin_src shell
+[*.md]
+#+end_src
+
+To check multiple formats
+
+#+begin_src shell
+[*.{txt,md, org,html}]
+#+end_src
+*** Choose Styles
+Names of the Styles are case sensitive, separated by a comma.
+#+begin_src shell
+BasedOnStyles = Google, RedHat
+#+end_src
+
+*** Turn Off Specific Rules of a Style
+
+#+begin_src shell
+Vale.Repetition = off
+#+end_src
+
+*** Allowed and Forbidden Words
+To use the built-in rules of accepted and rejected vocabularies, first enable the style of =Vale=:
+
+#+begin_src shell
+BasedOnStyles = Vale, RedHat
+#+end_src
+
+Vale version 3.0.0 moved the configuration file to the =config= folder under =styles=.
+
+Remember that terms in the vocabulary files are case-sensitive.
+#+begin_src shell
+Use 'Google' instead of 'google'.
+#+end_src
+
+*** Vale Rule Authoring
+Most rules are quite straightforward and the only thing that may be difficult is to write regex. Most useful regex for rule authoring are mentioned in the [[https://vale.sh/docs/topics/styles/][Styles - Vale]]:
+
+In addition to the standard Go regex syntax, Vale also supports positive lookahead ((?=re)), negative lookahead ((?!re)), positive lookbehind ((?<=re)), and negative lookbehind ((?<!re)).
+
+
+
+** Integrations
+*** Vale for Chrome
+The latest Vale supports Chrome, which lints the text area of the web page. This can be quite useful for Github, Reddit and Hacker News.
+**** Chrome Store
+[[https://chromewebstore.google.com/detail/vale/kfmjcegeklidlnjoechfggipjjjahedj][Vale]]
+
+**** Check Vale File Location
+#+begin_src shell
+vale ls-dirs
+#+end_src
+Result:
+#+begin_src cmd
+G:\vale\styles>vale ls-dirs
+Asset       | Default Location                                                 | Found
+StylesPath  | C:\Users\Administrator\AppData\Local\vale\styles                 | ✓
+.vale.ini   | C:\Users\Administrator\AppData\Local\vale\.vale.ini              | ✓
+vale-native | C:\Users\Administrator\AppData\Local\vale\native\vale-native.exe | ✓
+#+end_src
+
+Remember to create the =.vale.ini= at the above-mentioned location as your main configuration file.
+
+
+
+*** VS Code
+*** Emacs
+I use Vale with Flycheck and Consult. Currently, it seems difficult to see where the results of Vale linting come from. 
+*** Hugo
+[[https://github.com/errata-ai/Hugo][errata-ai/Hugo: A Vale configuration for Hugo-generated static sites.]]

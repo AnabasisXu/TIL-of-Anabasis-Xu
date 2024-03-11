@@ -1,0 +1,86 @@
+#+TITLE:      Book Protocol for GEB
+#+DATE:       [2024-01-25 Thu 15:50]
+#+FILETAGS:   :geb:
+#+IDENTIFIER: 20240125T155009
+#+SOURCE: 
+
+* Awesome GEB
+Some books are only to be read after some preparations, some of which can be quite technical. I try to constuct a protocol for reading, just like the sleeping protocol or cold exposure protocol mentioned by Huberman.
+*** General
+**** [[https://godel-escher-bach.fandom.com/wiki/G%C3%B6del,_Escher,_Bach_Wiki][Gödel, Escher, Bach Wiki | Fandom]]
+*** Courses
+**** [[https://www.people.vcu.edu/~elhaij/GEB/][MATH195: Gödel, Escher, and Bach]]
+Great problem sets
+**** [[https://ocw.mit.edu/courses/es-258-goedel-escher-bach-spring-2007/][Gödel, Escher, Bach | Experimental Study Group | MIT OpenCourseWare]]
+*** Notes
+**** General Notes
+
+***** [[https://notes.fringeling.com/OnStrangeLoopsAndGEB/][Notes on GEB]]
+incorporating H's own remarks in the 20th edition 
+the genesis of GEB
+with a great GEB reader to structure your reading journey
+**** Chapter by charpter
+***** Notes by Aleksandar Petrov
+****** [[https://blog.p-petrov.com/2021-03-16/geb-part-1][Book notes: Gödel, Escher, Bach. Part 1 | Aleksandar Petrov]]
+****** [[https://blog.p-petrov.com/2021-04-03/geb-part-2.html][Book notes: Gödel, Escher, Bach. Part 2 | Aleksandar Petrov]]
+***** [[https://www.nateliason.com/notes/godel-escher-bach-douglas-hofstadter][Gödel Escher Bach by Douglas R. Hofstadter: Summary, Notes, & Lessons - Nat Eliason]]
+***** Note with Code
+****** [[https://cs.lmu.edu/~ray/notes/geb/][Notes on GEB]]
+*** Github Pojects
+**** [[https://tn1ck.github.io/MIU/][Gödel Escher Back - MUI]]
+**** [[https://github.com/alexprengere/FormalSystems][alexprengere/FormalSystems: A Python implementation of Douglas Hofstadter formal systems, from his book "Gödel, Escher, Bach"]]
+**** [[https://gist.github.com/viebel/5af8070145d1c1c738f9ace114683cc2][Godel Escher Bach - G fractal from Chapter 5]]
+**** [[https://gist.github.com/RussellAndrewEdson/55bd57a00da07f7c8243][The recursive F and M functions from Godel, Escher, Bach.]]
+**** [[https://github.com/reflexer-labs/geb][reflexer-labs/geb: Core smart contracts for GEB]]
+*** Articles
+**** Explaination
+***** [[https://www.lesswrong.com/posts/wwNnzaPnB5a48K86N/book-review-goedel-escher-bach-an-in-depth-explainer][[Book review] Gödel, Escher, Bach: an in-depth explainer — LessWrong]]
+**** Criticism
+***** [[https://news.ycombinator.com/item?id=17461506][Why I Don't Love Gödel, Escher, Bach | Hacker News]]
+
+#+begin_quote
+So, I decided to put down IAASL and try to really get through GEB first.. like for real this time... and found an Open Courseware[0] on the book to follow hoping that would help me really cut through it. It did! The trick that did it for me was the prof's suggestion that you just skip the first 300 or so pages and he picked up from there.
+#+end_quote
+
+#+begin_quote
+In my opinion the "Fluid concepts and analogies" is the culmination of his work. GEB and "Metamagical Themeas" are the predule, what came afterwards is more like prose and and maybe reflection of his personal tragedy.
+#+end_quote
+****** read IAASL first
+
+#+begin_quote
+I do not hesitate to recommend -- for all those that struggled with GEB, or all those that wish to read GEB, pick up a copy of IAASL, and then if you still wish to read GEB, try it after reading IAASL.
+#+end_quote
+****** better with lambda
+
+#+begin_quote
+I’ve read it cover to cover, twice. It’s not a bad book, but it would have helped if he had used the Lambda calculus. YMMV.
+Best resource I've found is a book called "Introduction to Functional Programming through Lambda Calculus": https://www.amazon.com/Introduction-Functional-Programming-C...
+#+end_quote
+
+
+
+
+****** what to expect from geb
+	
+AlphaGeekZulu on July 6, 2018 | root | parent | prev | next [–]
+
+"[...]but nobody I know has actually managed to finish it."
+I read the book entirely from first to last page, including bibliography, five times in five years. I was at the age of appr. 19-24 and I did not read many other books in that time. Everytime I read it again, it felt like a new book. I keep casually reading random parts of it until today.
+
+I like Getty's review, although I do not share it at all. I learned many years ago, from a very wise friend, that when I struggle - for example with certain habits of my partner - that the root of my struggling is most likely not within the other, but myself. It points to some personal deficit. This friend taught me to explore myself, before I demand any change from the other. Why is it bothering me, what would I have to change in myself to get over it?
+
+Applying this rule, in Getty's place, I would ask myself: "how comes, that so many people are appealed by this book in a way that I am not? What makes those readers, that share my criticism and those that don't, different?". This sort of introspection is very difficult and sometimes impossible. But in the case of Getty's cognition of GEB I might give some clues:
+
+The parts of the book that receive most criticism in Getty's review are those parts, that I would consider the entertaining sections. For example: never did I perceive the dialogs in the book as didactic. I always perceived the dialogs as a rest period, an intake of breath. After long didactic and sometimes hard to swallow scientific passages, the dialogs in their playful and sometimes childish style would allow my brain to settle down, relax and get ready, very softly, for the next topic. Like you would shake your arms and legs between sportive excercises. The dialogs were always welcome intermissions for me, but I did not take them very seriously and I did not, at all, expect them to be an essential part of the didactic mission of the book.
+
+The second major element of criticism in Getty's review are topics in the book that do not belong to the core themes (Gödels proof, logic, formal systems), but are brought in by the author in a way that does not properly embrace them for one and which he should't refer to in the first place, as he has no sufficient proficiency in those topics (according to Getty).
+
+The expection of Getty obviously is, that GEB is supposed to be a very serious scholarly and didactic work, that must not deviate from its core topic. And I believe that is a mis-expectation: Getty expected a textbook, but got a novel. In MY perception GEB is the novel of Gödels proof and as such it can play and entertain and experiment to any degree that the author desires. Of course the author can make fun of Cage and completely miss Zen buddhism. For me, it was absolutely clear and obvious in every paragraph of the book, whether the author was didactic or playful or personal at any point. The mixture is the essence of the book that makes it so appealing to me. Textbooks are often too dry and hard to swallow, novels on scientific topics almost never go deep enough for me. GEB is an experimental format that hit the sweet point for me.
+
+I want to make clear, that Getty is not "wrong" in his perception - it is his view and it is absolutely legit as such. I believe, though, it is a very big error to blame the author for not fulfilling one's own exepctations or try to convince others, to adapt their perception to one's own - there is no point in this. If Getty is really interested what makes him tick differently than others, he should introspect his indisposition with the "soft", playful, not so scientific, didactic aspects of the book. Why is he upset with those parts, where the author deviates from his views? Why is he unable to distinguish between the serious and the playful parts of the book? It might point him to some revealing aspects of his personality. There is no outcome in the sense of right or wrong!
+
+I liked Getty's review - not for what it was proposedly written for: revealing to me weaknesses of the book I haven't discovered yet, or convincing me, that the book that I so much love, is actually not loveable - but for taking the courage and providing me with an insight in another type of brain and perception, and therefore another aspect of personhood, that I found very interesting and entertaining to learn about! This comes with absolutely no assessment from my side!
+
+**** AI
+***** [[https://www.theatlantic.com/ideas/archive/2023/07/godel-escher-bach-geb-ai/674589/][Gödel, Escher, Bach, and AI - The Atlantic]]
+
