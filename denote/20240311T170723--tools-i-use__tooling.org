@@ -1,0 +1,1108 @@
+#+TITLE:      Tools I use
+#+DATE:       [2024-03-11 Mon 17:07]
+#+FILETAGS:   :tooling:
+#+IDENTIFIER: 20240311T170723
+#+SOURCE: 
+
+** 我目前使用的windows工具列表
+*** 放弃使用
+fastkeys
+Quicker
+大量浏览器脚本，尤其是用来复制和搜索的那些，基本上能被Surfingkeys替代
+
+
+*** [#A] Scoop
+目前用 scoop 管理大部分软件
+已经使用chocolatey安装的话，似乎要比scoop优先级更高
+比如rg，用scoop安装了14，但版本还是13
+
+
+C:\Users\Administrator>scoop list
+Installed apps:
+
+Name             Version         Source Updated             Info
+----             -------         ------ -------             ----
+7zip             22.01           main   2023-01-02 10:25:55
+7zip19.00-helper 19.00           main   2024-03-02 08:53:10
+busybox          5301-gda71f7c57 main   2024-02-24 11:42:45
+cheat            4.4.2           main   2024-03-02 20:06:18
+cmder            1.3.24          main   2024-02-24 20:24:22
+copyq            7.1.0           extras 2024-03-02 19:48:21
+curl             8.6.0_2         main   2024-02-24 20:23:52
+dngrep           4.0.151.0       extras 2024-03-02 19:50:30
+everything       1.4.1.1024      extras 2024-03-02 19:27:00
+fd               9.0.0           main   2024-03-01 13:45:34
+go               1.22.0          main   2024-02-19 22:33:44
+hugo             0.121.2         main   2024-01-19 20:07:52
+hugo-extended    0.110.0         main   2023-01-28 10:55:04
+innounp          0.50            main   2023-01-02 10:25:56
+libreoffice      7.4.4.1         extras 2023-01-02 10:38:07
+neovim           0.9.5           main   2024-02-22 10:03:05
+PostgreSQL       16.2            main   2024-03-02 09:57:49
+ripgrep          14.1.0          main   2024-03-02 20:00:52
+roswell          21.10.14.111    main   2024-02-02 15:43:33
+rust             1.75.0          main   2024-01-21 19:52:13
+sourcetree       3.4.15          extras 2024-02-24 21:18:41
+sqlite           3.45.1          main   2024-03-01 21:17:55
+starship         1.16.0          main   2023-12-04 08:54:13
+sumatrapdf       3.5.2           extras 2024-02-24 11:39:13
+tidy             5.8.0           main   2024-02-18 08:23:52
+vale             3.2.0           main   2024-03-01 20:13:26
+vcredist2022     14.34.31931.0   extras 2023-01-02 10:45:10
+wkhtmltopdf      0.12.6-1        main   2024-03-01 08:18:41
+zig              0.11.0          main   2024-01-21 19:40:42
+zoxide           0.9.2           main   2023-12-07 14:15:43
+**** cheat
+cheat mv
+# To move a file from one place to another:
+mv <src> <dest>
+
+# To move a file from one place to another and automatically overwrite if the destination file exists:
+# (This will override any previous -i or -n args)
+mv -f <src> <dest>
+
+# To move a file from one place to another but ask before overwriting an existing file:
+# (This will override any previous -f or -n args)
+mv -i <src> <dest>
+
+# To move a file from one place to another but never overwrite anything:
+# (This will override any previous -f or -i args)
+mv -n <src> <dest>
+
+# To move listed file(s) to a directory
+mv -t <dest> <file>...
+
+
+
+*** choco
+C:\ProgramData\chocolatey
+D:\HOME\org\notes\learning_notes>choco list --local-only
+Chocolatey v1.1.0
+chocolatey 1.1.0
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+chocolatey-dotnetfx.extension 1.0.1
+chocolatey-visualstudio.extension 1.10.2
+chocolatey-windowsupdate.extension 1.0.5
+dngrep 4.1.27.0
+dotnetfx 4.8.0.20220524
+ffmpeg 5.1.2
+hugo-extended 0.110.0
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+lazygit 0.35
+pandoc 3.0
+poppler 0.89.0
+python 3.11.0
+python3 3.11.0
+ripgrep 13.0.0.20220913
+ripgrep-all 0.9.6
+vcredist140 14.34.31931
+vcredist2015 14.0.24215.20170201
+visualstudio-installer 2.0.3
+visualstudio2019buildtools 16.11.22.0
+26 packages installed.
+
+*** TODO sqlite
+sqlite gui
+
+*** 重命名
+从 Renamer转向MiniRenamer，再转向Emacs
+*** TODO 资源管理器
+计划转向freeCommaner
+*** 安卓手机查看
+QtScrcpy
+*** 剪切板管理器
+从Ditto转向CopyQ
+*** 文本比较
+从BC转向Mege
+日常使用Emacs
+*** 同步
+**** Free file sync
+**** Syncthing
+*** 下载
+**** Bilibili-DownKyi-1.5.9
+**** Motrix
+*** 手机文件传输
+localsend
+Syncthing
+*** tts
+tts vue--不可用
+*** 阅读器
+从Acrobat转向Sumatra，仅用于简单笔记
+需要详细笔记用BookxNote Pro
+*** TODO 图书工具
+**** Calibre
+**** Sigil
+*** 命令行工具
+**** pyglossary
+**** Mdict
+*** 文件搜索
+Everything
+放弃grepwin fileseek
+
+从file locator转向dnGrep
+*** TODO 网络搜索
+HyperSearch
+*** 截图
+fast stone
+Snipaste
+*** 音乐
+Foobar
+*** TODO [#B] 输入法
+重新尝试rime和emacs rime
+*** [#A] 脚本 ahk
+*** DONE 提醒
+Ztasker
+*** Chrome插件列表 NooBoss backup
+
+Adblock Plus - free ad blocker	O
+Append Reddit	O
+Copy Cat	O
+Copy Selected Links	O
+Copycat	O
+Cute Save Button	O
+Decentraleyes	O
+Global Speed	O
+Google Search date range shortcut	O
+Immersive Translate: Web Page&PDF Translation	O
+Instant Data Scraper	O
+NooBoss	O
+Org Capture	O
+Overload Search - Advanced Google Search	O
+Privacy Badger	O
+ReplaceR	O
+Save Text to File	O
+Search All	O
+Search all Tabs	O
+Search the current site	O
+SearchMage	O
+SelectorGadget	O
+SimpleExtManager	O
+SingleFile	O
+Steward Plus	O
+Surfingkeys	O
+Tampermonkey	O
+uBlacklist	O
+uBlock Origin Lite	O
+Video Screenshot	O
+Web Search Navigator	O
+Advanced Font Settings	X
+Automa	X
+Browserflow - Web Scraping & Web Automation	X
+Chrono	X
+Chrono Download Manager	X
+Clear Cache	X
+Clearbit Connect: Free, Verified B2B Emails	X
+ClearURLs	X
+Click Copy Sentence	X
+Cookie Notice Blocker	X
+Copy as Markdown	X
+Copy Title and Url as Markdown Style	X
+Copy URL with Title (plain text/markdown)	X
+Custom Chrome - Extension Manager	X
+Custom Right-Click Menu	X
+DeepL Translate: Reading & writing translator	X
+DOI Helper	X
+Easy History	X
+Edit Anything	X
+EditThisCookie	X
+Enhanced GitHub	X
+enhanced-h264ify	X
+Enhancer for YouTube™	X
+EpubPress - Read the web offline	X
+Export Chrome History	X
+Extensions Steward	X
+find+ | Regex Find-in-Page Tool	X
+Firenvim	X
+Gitako - GitHub file tree	X
+GoFullPage - Full Page Screen Capture	X
+Google Enhancer	X
+Gooreplacer	X
+Grammar Checker & Paraphraser – LanguageTool	X
+GraphiTabs	X
+Grepper	X
+Hacker News Enhancement Suite	X
+HARPA AI | Automation Agent with Claude & GPT	X
+Highlight This: finds and marks words	X
+Highlighty: Search, Find, Multi Highlight	X
+History Trends Unlimited	X
+HTML Hierarchy Visualizer	X
+HTML Tree Generator	X
+HTML Visual Validation	X
+HTTPS Everywhere	X
+Hunter - Email Finder Extension	X
+Hypothesis - Web & PDF Annotation	X
+iMacros for Chrome	X
+Image Link Grabber	X
+ImageAssistant Batch Image Downloader	X
+Imagus	X
+Infinite Dashboard - New Tab like no other	X
+Inject Jyutping	X
+Intention - Stop Mindless Browsing	X
+Kiwix	X
+Monitor and Clean system's CPU / RAM usage	X
+Multiple Tabs Search	X
+No Per-Script Font!	X
+Octotree - GitHub code tree	X
+One Click Extensions Manager	X
+OneTab Plus:Tab Manage & Productivity	X
+Online Dictionary Helper	X
+Outside YouTube Player Bar	X
+Page Edit	X
+Page to JSON	X
+Paodin: word translation / collection / back word	X
+PDF Mage	X
+Postlight Reader	X
+Proxy SwitchySharp	X
+Quick Tabs	X
+Reader Mode	X
+Recent Tabs and History (Wrona History Menu)	X
+Reddit Comment Collapser	X
+Reddit Enhancement Suite	X
+RocketReach Chrome Extension	X
+Save as eBook	X
+Save image as Type	X
+Sci-Hub Remove Left Sidebar	X
+Set Character Encoding	X
+Similar Sites - Discover Related Websites	X
+Similarweb - Traffic Rank & Website Analysis	X
+Simple Allow Copy	X
+Spider Free - The simplest web scraper	X
+Steward	X
+Stylus	X
+Super Drag for Google Chrome	X
+Table Capture	X
+Tabs Outliner	X
+Talend API Tester - Free Edition	X
+The FKing Github	X
+Toggl Track: Productivity & Time Tracker	X
+uBlock Origin	X
+Vocabulary Highlighter	X
+Wappalyzer - Technology profiler	X
+Web Scraper - Free Web Scraping	X
+WebToEpub	X
+WhatRuns	X
+Wikiwand: Wikipedia Modernized	X
+Word Discoverer: Expand your vocabulary	X
+Writefull for Overleaf	X
+XPath Helper	X
+YAAW for Chrome	X
+Zotero Connector	X
+為什麼你們就是不能加個空格呢？	X
+知乎外链直达	X
+网页编码修改（Charset）	X
+豆伴：豆瓣账号备份工具	X
+
+
+*** Cygwin cygcheck --check-setup
+Cygwin Package Information
+Package                                Version                      Status
+2048-cli                               0.9.1-1                      OK
+_autorebase                            001091-1                     OK
+adwaita-icon-theme                     3.26.1-1                     OK
+alternatives                           1.3.30c-10                   OK
+asciidoc                               10.2.0-1                     OK
+autoconf                               15-1                         OK
+autoconf2.1                            2.13-12                      OK
+autoconf2.5                            2.69-5                       OK
+autoconf2.7                            2.71-2                       OK
+automake                               11-1                         OK
+automake1.10                           1.10.3-3                     OK
+automake1.11                           1.11.6-3                     OK
+automake1.12                           1.12.6-3                     OK
+automake1.13                           1.13.4-2                     OK
+automake1.14                           1.14.1-3                     OK
+automake1.15                           1.15.1-2                     OK
+automake1.16                           1.16.5-1                     OK
+automake1.9                            1.9.6-11                     OK
+base-cygwin                            3.8-2                        OK
+base-files                             4.3-3                        OK
+bash                                   5.2.15-3                     OK
+biber                                  2.19-2                       OK
+binutils                               2.41-3                       OK
+build-docbook-catalog                  1.5-2                        OK
+bzip2                                  1.0.8-1                      OK
+ca-certificates                        2023.2.60_v7.0.306-1         OK
+chmlib                                 0.40-1                       OK
+clang                                  8.0.1-1                      OK
+cmake                                  3.25.3-1                     OK
+compiler-rt                            8.0.1-1                      OK
+coreutils                              9.0-1                        OK
+crypto-policies                        20190218-1                   OK
+csih                                   0.9.13-1                     OK
+curl                                   8.4.0-1                      OK
+cygrunsrv                              1.64-1                       OK
+cygutils                               1.4.17-1                     OK
+cygwin                                 3.4.9-1                      OK
+cygwin-devel                           3.4.9-1                      OK
+cygwin32                               2.10.0-1                     OK
+cygwin32-binutils                      2.29-1                       OK
+cygwin32-default-manifest              6.4-1                        OK
+cygwin32-gcc-core                      6.4.0-1                      OK
+cygwin32-gcc-g++                       6.4.0-1                      OK
+cygwin32-gettext                       0.19.5.1-1                   OK
+cygwin32-libiconv                      1.14-2                       OK
+cygwin32-w32api-headers                4.0.4-1                      OK
+cygwin32-w32api-runtime                4.0.4-1                      OK
+dash                                   0.5.12-2                     OK
+dblatex                                0.3.12-2                     OK
+dejavu-fonts                           2.37-1                       OK
+desktop-file-utils                     0.23-1                       OK
+dialog                                 1.3-7.20231002               OK
+diffutils                              3.10-1                       OK
+docbook-xsl                            1.77.1-1                     OK
+dos2unix                               7.5.1-1                      OK
+ed                                     1.19-1                       OK
+editrights                             1.04-1                       OK
+file                                   5.44-1                       OK
+findutils                              4.9.0-1                      OK
+gamin                                  0.1.10-15                    OK
+gawk                                   5.3.0-1                      OK
+gcc-core                               11.4.0-1                     OK
+gcc-g++                                11.4.0-1                     OK
+gcc-tools-epoch1-autoconf              2.59-2                       OK
+getent                                 2.18.90-5                    OK
+gettext                                0.22.3-1                     OK
+gettext-devel                          0.22.3-1                     OK
+ghostscript                            10.01.2-1                    OK
+ghostscript-fonts-other                6.0-1                        OK
+git                                    2.42.1-1                     OK
+git-gui                                2.42.1-1                     OK
+gitk                                   2.42.1-1                     OK
+gnupg                                  1.4.23-1                     OK
+gnutls                                 3.6.9-1                      OK
+grep                                   3.11-1                       OK
+groff                                  1.23.0-1                     OK
+gsettings-desktop-schemas              3.24.1-1                     OK
+gtk-update-icon-cache                  3.22.28-1                    OK
+gzip                                   1.13-1                       OK
+hicolor-icon-theme                     0.15-1                       OK
+hostname                               3.13-1                       OK
+ImageMagick                            7.0.10.61-1                  OK
+info                                   7.0.3-3                      OK
+ipc-utils                              1.1-1                        OK
+less                                   608-1                        OK
+libarchive13                           3.7.2-1                      OK
+libargp                                20230708-2                   OK
+libassuan0                             2.5.5-1                      OK
+libatk1.0_0                            2.26.1-1                     OK
+libatomic1                             11.4.0-1                     OK
+libattr1                               2.5.1-1.20.g0981a7bfe487     OK
+libautotrace3                          0.31.1-19                    OK
+libblkid1                              2.33.1-2                     OK
+libbrotlicommon1                       1.0.9-3                      OK
+libbrotlidec1                          1.0.9-3                      OK
+libbz2-devel                           1.0.8-1                      OK
+libbz2_1                               1.0.8-1                      OK
+libc++-devel                           8.0.1-1                      OK
+libc++1                                8.0.1-1                      OK
+libc++abi-devel                        8.0.1-1                      OK
+libc++abi1                             8.0.1-1                      OK
+libcairo2                              1.17.4-1                     OK
+libcares2                              1.14.0-1                     OK
+libcdt5                                8.0.5-1                      OK
+libcgraph6                             8.0.5-1                      OK
+libcharset1                            1.17-1                       OK
+libchm0                                0.40-1                       OK
+libclang8                              8.0.1-1                      OK
+libcom_err2                            1.44.5-1                     OK
+libcroco0.6_3                          0.6.12-1                     OK
+libcrypt-devel                         4.4.20-1                     OK
+libcrypt0                              2.1-1                        OK
+libcrypt2                              4.4.20-1                     OK
+libcurl-devel                          8.4.0-1                      OK
+libcurl4                               8.4.0-1                      OK
+libdatrie1                             0.2.8-1                      OK
+libdb-devel                            5.3.28-2                     OK
+libdb5.3                               5.3.28-2                     OK
+libdbus1_3                             1.10.22-1                    OK
+libde265_0                             1.0.8-1                      OK
+libdeflate0                            1.18-1                       OK
+libdialog13                            1.3-2.20160828               OK
+libdialog14                            1.3-3.20170131               OK
+libdialog15                            1.3-7.20231002               OK
+libdjvulibre-common                    3.5.27-1                     OK
+libdjvulibre21                         3.5.27-1                     OK
+libedit0                               20221030-4                   OK
+libEMF1                                1.0.13-1                     OK
+libevent2.0_5                          2.0.22-1                     OK
+libexpat1                              2.5.0-1                      OK
+libfam-devel                           0.1.10-15                    OK
+libfam0                                0.1.10-15                    OK
+libfdisk1                              2.33.1-2                     OK
+libffi-devel                           3.4.3-1                      OK
+libffi6                                3.2.1-2                      OK
+libffi8                                3.4.3-1                      OK
+libfftw3_3                             3.3.10-1                     OK
+libfido2                               1.12.0-1                     OK
+libfontconfig-common                   2.13.1-2                     OK
+libfontconfig1                         2.13.1-2                     OK
+libfpx1                                1.3.1.4-1                    OK
+libfreetype6                           2.13.1-1                     OK
+libfribidi0                            0.19.7-1                     OK
+libgamin1_0                            0.1.10-15                    OK
+libgc1                                 8.2.4-1                      OK
+libgcc1                                11.4.0-1                     OK
+libgcrypt-devel                        1.10.2-1                     OK
+libgcrypt20                            1.10.2-1                     OK
+libgd3                                 2.3.3-1                      OK
+libgdbm4                               1.13-1                       OK
+libgdbm6                               1.18.1-1                     OK
+libgdbm_compat4                        1.18.1-1                     OK
+libgdk_pixbuf2.0_0                     2.36.11-1                    OK
+libgif4                                4.1.6-12                     OK
+libgif7                                5.2.1-1                      OK
+libglib2.0_0                           2.64.6-1                     OK
+libgmp-devel                           6.3.0-1                      OK
+libgmp10                               6.3.0-1                      OK
+libgmpxx4                              6.3.0-1                      OK
+libgnutls-dane0                        3.6.9-1                      OK
+libgnutls-devel                        3.6.9-1                      OK
+libgnutls28                            3.3.27-1                     OK
+libgnutls30                            3.6.9-1                      OK
+libgnutlsxx28                          3.6.9-1                      OK
+libgomp1                               11.4.0-1                     OK
+libgpg-error-devel                     1.37-1                       OK
+libgpg-error0                          1.37-1                       OK
+libgpgme11                             1.9.0-1                      OK
+libgraphite2_3                         1.3.14-1                     OK
+libgs10                                10.01.2-1                    OK
+libgs9                                 9.56.1-1                     OK
+libgsasl-common                        2.2.0-2                      OK
+libgsasl18                             2.2.0-2                      OK
+libgsasl7                              1.10.0-1                     OK
+libgssapi_krb5_2                       1.15.2-2                     OK
+libgtk2.0_0                            2.24.33-1                    OK
+libgts0.7_5                            20121130-1                   OK
+libguile2.2_1                          2.2.7-1                      OK
+libguile3.0_1                          3.0.9-2                      OK
+libgvc6                                8.0.5-1                      OK
+libharfbuzz0                           8.1.1-1                      OK
+libheif1                               1.12.0-1                     OK
+libhogweed2                            2.7.1-1                      OK
+libhogweed4                            3.4.1-1                      OK
+libICE6                                1.1.1-1                      OK
+libiconv                               1.17-1                       OK
+libiconv-devel                         1.17-1                       OK
+libiconv2                              1.17-1                       OK
+libicu67                               67.1-2                       OK
+libicu68                               68.2-1                       OK
+libicu69                               69.1-1                       OK
+libicu73                               73.2-1                       OK
+libidn11                               1.33-1                       OK
+libidn12                               1.41-1                       OK
+libidn2_0                              2.3.4-1                      OK
+libilmbase2_5_25                       2.5.8-1                      OK
+libIlmImf2_5_26                        2.5.8-1                      OK
+libimagequant0                         2.10.0-1                     OK
+libintl-devel                          0.22.3-1                     OK
+libintl8                               0.22.3-1                     OK
+libisl13                               0.14.1-1                     OK
+libisl23                               0.26-1                       OK
+libjasper4                             2.0.14-1                     OK
+libjbig2                               2.1-2                        OK
+libjpeg8                               2.1.5.1-1                    OK
+libjsoncpp25                           1.9.5-1                      OK
+libk5crypto3                           1.15.2-2                     OK
+libkpathsea6                           20230313-2                   OK
+libkrb5_3                              1.15.2-2                     OK
+libkrb5support0                        1.15.2-2                     OK
+libLASi1                               1.1.1-2                      OK
+liblcms2_2                             2.15-1                       OK
+libllvm8                               8.0.1-1                      OK
+liblqr1_0                              0.4.2-1                      OK
+libltdl7                               2.4.7-1                      OK
+liblua5.3                              5.3.6-4                      OK
+liblua5.4                              5.4.4-1                      OK
+liblz4_1                               1.9.4-1                      OK
+liblzma-devel                          5.4.5-1                      OK
+liblzma5                               5.4.5-1                      OK
+liblzo2_2                              2.10-2                       OK
+libMagickC++6_8                        6.9.10.11-4                  OK
+libMagickC++7_4                        7.0.10.61-1                  OK
+libMagickCore6_2                       6.9.5.7-2                    OK
+libMagickCore6_5                       6.9.9.11-3                   OK
+libMagickCore6_6                       6.9.10.11-4                  OK
+libMagickCore7_7                       7.0.10.27-2                  OK
+libMagickCore7_9                       7.0.10.61-1                  OK
+libMagickWand6_6                       6.9.10.11-4                  OK
+libMagickWand7_7                       7.0.10.27-2                  OK
+libMagickWand7_9                       7.0.10.61-1                  OK
+libmetalink3                           0.1.3-1                      OK
+libming1                               0.4.8-3                      OK
+libmpc3                                1.3.1-1                      OK
+libmpfr4                               3.1.6-1p1                    OK
+libmpfr6                               4.2.1-1                      OK
+libncurses++w10                        6.4-3.20230114               OK
+libncurses-devel                       6.4-3.20230114               OK
+libncursesw10                          6.4-3.20230114               OK
+libnettle-devel                        3.4.1-1                      OK
+libnettle4                             2.7.1-1                      OK
+libnettle6                             3.4.1-1                      OK
+libnghttp2_14                          1.58.0-1                     OK
+libnspr-devel                          4.21-1                       OK
+libnspr4                               4.21-1                       OK
+libnss-devel                           3.45-1                       OK
+libnss3                                3.45-1                       OK
+libntlm0                               1.4-1                        OK
+libopenjp2_7                           2.5.0-1                      OK
+libopenldap2                           2.6.6-1                      OK
+libopenldap2_4_2                       2.6.6-1                      OK
+libopts25                              5.18.16-1                    OK
+libp11-kit-devel                       0.23.20-1                    OK
+libp11-kit0                            0.23.20-1                    OK
+libpango1.0_0                          1.40.14-1                    OK
+libpaper-common                        1.1.28-1                     OK
+libpaper1                              1.1.28-1                     OK
+libpathplan4                           8.0.5-1                      OK
+libpcre-devel                          8.45-1                       OK
+libpcre1                               8.45-1                       OK
+libpcre16_0                            8.45-1                       OK
+libpcre2_32_0                          10.42-1                      OK
+libpcre2_8_0                           10.42-1                      OK
+libpcre32_0                            8.45-1                       OK
+libpcrecpp0                            8.45-1                       OK
+libpcreposix0                          8.45-1                       OK
+libpipeline1                           1.5.6-1                      OK
+libpixman1_0                           0.42.2-1                     OK
+libpkgconf4                            2.0.3-1                      OK
+libplotter2                            2.6-5                        OK
+libpng16                               1.6.39-1                     OK
+libpolly8                              8.0.1-1                      OK
+libpoppler-cpp-devel                   21.01.0-1                    OK
+libpoppler-cpp0                        21.01.0-1                    OK
+libpoppler-devel                       21.01.0-1                    OK
+libpoppler-glib8                       21.01.0-1                    OK
+libpoppler106                          21.01.0-1                    OK
+libpoppler99                           0.88.0-2                     OK
+libpopt-common                         1.19-1                       OK
+libpopt-devel                          1.19-1                       OK
+libpopt0                               1.19-1                       OK
+libpotrace0                            1.16-1                       OK
+libpq-devel                            15.3-1                       OK
+libproc2_0                             4.0.4-1                      OK
+libprocps7                             3.3.15-1                     OK
+libprocps8                             3.3.17-1                     OK
+libpsl5                                0.21.2-1                     OK
+libpstoedit0                           3.78-1                       OK
+libptexenc1                            20230313-2                   OK
+libquadmath0                           11.4.0-1                     OK
+libraqm0                               0.7.0-1                      OK
+libraw16                               0.18.5-1                     OK
+libreadline-devel                      8.2-2                        OK
+libreadline7                           8.2-2                        OK
+librhash0                              1.4.1-1                      OK
+librsvg2_2                             2.40.20-1                    OK
+libsasl2_3                             2.1.27-1                     OK
+libsigsegv2                            2.10-2                       OK
+libSM6                                 1.2.4-1                      OK
+libsmartcols1                          2.33.1-2                     OK
+libsodium-common                       1.0.18-1                     OK
+libsodium23                            1.0.18-1                     OK
+libsqlite3_0                           3.34.0-1                     OK
+libssh2_1                              1.11.0-1                     OK
+libssl-devel                           3.0.12-1                     OK
+libssl1.0                              1.0.2u+za-1                  OK
+libssl1.1                              1.1.1w-1                     OK
+libssl3                                3.0.12-1                     OK
+libssp0                                6.4.0-4                      OK
+libstdc++6                             11.4.0-1                     OK
+libsynctex2                            20230313-2                   OK
+libtasn1-devel                         4.14-1                       OK
+libtasn1_6                             4.14-1                       OK
+libteckit0                             2.5.10-1                     OK
+libtexlua53_5                          20230313-2                   OK
+libtexluajit2                          20230313-2                   OK
+libthai0                               0.1.26-1                     OK
+libtidy-devel                          1:5.6.0-1                    OK
+libtidy5                               1:5.6.0-1                    OK
+libtiff6                               4.4.0-1                      OK
+libtiff7                               4.5.1-1                      OK
+libtool                                2.4.7-1                      OK
+libuchardet0                           0.0.8-1                      OK
+libunbound-common                      1.6.2-1                      OK
+libunbound2                            1.6.2-1                      OK
+libunistring2                          0.9.10-1                     OK
+libunistring5                          1.1-1                        OK
+libunwind-devel                        8.0.1-1                      OK
+libunwind1                             8.0.1-1                      OK
+libusb0                                1.2.6.0-2                    OK
+libuuid-devel                          2.33.1-2                     OK
+libuuid1                               2.33.1-2                     OK
+libuv1                                 1.44.2-1                     OK
+libwebp5                               0.4.4-1                      OK
+libwebp7                               1.3.2-1                      OK
+libwebpdemux2                          1.3.2-1                      OK
+libwebpmux3                            1.3.2-1                      OK
+libX11_6                               1.8.4-1                      OK
+libxapian-devel                        1.4.5-1                      OK
+libxapian30                            1.4.5-1                      OK
+libXau6                                1.0.11-1                     OK
+libXaw7                                1.0.15-1                     OK
+libxcb-render0                         1.15-1                       OK
+libxcb-shm0                            1.15-1                       OK
+libxcb1                                1.15-1                       OK
+libXcomposite1                         0.4.6-1                      OK
+libXcursor1                            1.2.1-1                      OK
+libXdamage1                            1.1.6-1                      OK
+libXdmcp6                              1.1.4-1                      OK
+libxdot4                               8.0.5-1                      OK
+libXext6                               1.3.5-1                      OK
+libXfixes3                             6.0.1-1                      OK
+libXft2                                2.3.7-1                      OK
+libXi6                                 1.8.1-1                      OK
+libXinerama1                           1.1.5-1                      OK
+libxml2                                2.10.4-2                     OK
+libxml2-devel                          2.10.4-2                     OK
+libxmlsec1-devel                       1.2.24-1                     OK
+libxmlsec1-gcrypt-devel                1.2.24-1                     OK
+libxmlsec1-gcrypt1                     1.2.24-1                     OK
+libxmlsec1-gnutls-devel                1.2.24-1                     OK
+libxmlsec1-gnutls1                     1.2.24-1                     OK
+libxmlsec1_1                           1.2.24-1                     OK
+libXmu6                                1.1.4-1                      OK
+libXpm4                                3.5.16-1                     OK
+libXrandr2                             1.5.3-1                      OK
+libXrender1                            0.9.11-1                     OK
+libxslt                                1.1.29-1                     OK
+libxslt-devel                          1.1.29-1                     OK
+libXss1                                1.2.4-1                      OK
+libXt6                                 1.3.0-1                      OK
+libxxhash0                             0.8.0-1                      OK
+libyaml0_2                             0.2.5-1                      OK
+libzip5                                1.5.1-1                      OK
+libzstd-devel                          1.5.5-1                      OK
+libzstd1                               1.5.5-1                      OK
+libzzip0.13                            0.13.72-1                    OK
+login                                  1.13-1                       OK
+lua5.1                                 5.1.5-3                      OK
+lynx                                   2.8.9-13                     OK
+m4                                     1.4.19-1                     OK
+make                                   4.4.1-2                      OK
+man-db                                 2.12.0-1                     OK
+mintty                                 3.6.5-1                      OK
+mle                                    1.7.2-1                      OK
+nano                                   4.9-1                        OK
+ncurses                                6.4-3.20230114               OK
+openssh                                9.5p1-1                      OK
+openssl                                3.0.12-1                     OK
+p11-kit                                0.23.20-1                    OK
+p11-kit-trust                          0.23.20-1                    OK
+pdfgrep                                2.1.2-1                      OK
+perl                                   5.36.1-1                     OK
+perl-autovivification                  0.18-4                       OK
+perl-B-Hooks-EndOfScope                0.26-2                       OK
+perl-Business-ISBN                     3.008-2                      OK
+perl-Business-ISBN-Data                20231102.001-1               OK
+perl-Business-ISMN                     1.203-2                      OK
+perl-Business-ISSN                     1.005-2                      OK
+perl-Class-Accessor                    0.51-4                       OK
+perl-Class-Data-Inheritable            0.09-2                       OK
+perl-Class-Inspector                   1.36-4                       OK
+perl-Class-Singleton                   1.6-3                        OK
+perl-Clone                             0.46-2                       OK
+perl-Data-Compare                      1.29-2                       OK
+perl-Data-Dump                         1.25-2                       OK
+perl-Data-Uniqid                       0.12-5                       OK
+perl-DateTime                          1.63-1                       OK
+perl-DateTime-Calendar-Julian          0.107-2                      OK
+perl-DateTime-Format-Builder           0.83-3                       OK
+perl-DateTime-Format-Strptime          1.79-2                       OK
+perl-DateTime-Locale                   1.39-1                       OK
+perl-DateTime-TimeZone                 2.60-2                       OK
+perl-Devel-StackTrace                  2.04-4                       OK
+perl-Digest-SHA1                       2.13-9                       OK
+perl-Dist-CheckConflicts               0.11-6                       OK
+perl-Encode-Locale                     1.05-5                       OK
+perl-Error                             0.17029-3                    OK
+perl-Eval-Closure                      0.14-5                       OK
+perl-Exception-Class                   1.45-2                       OK
+perl-File-Copy-Recursive               0.45-4                       OK
+perl-File-Find-Rule                    0.34-5                       OK
+perl-File-HomeDir                      1.006-3                      OK
+perl-File-Listing                      6.16-1                       OK
+perl-File-ShareDir                     1.118-3                      OK
+perl-File-Slurper                      0.014-2                      OK
+perl-File-Which                        1.27-2                       OK
+perl-HTML-Parser                       3.81-2                       OK
+perl-HTML-Tagset                       3.20-9                       OK
+perl-HTTP-CookieJar                    0.014-1                      OK
+perl-HTTP-Cookies                      6.10-3                       OK
+perl-HTTP-Date                         6.06-1                       OK
+perl-HTTP-Message                      6.45-1                       OK
+perl-HTTP-Negotiate                    6.01-9                       OK
+perl-IO-HTML                           1.004-3                      OK
+perl-IO-Socket-SSL                     2.083-1                      OK
+perl-IO-String                         1.08-9                       OK
+perl-IPC-Run3                          0.048-6                      OK
+perl-JSON-PP                           4.16-2                       OK
+perl-libwww-perl                       6.72-1                       OK
+perl-Lingua-Translit                   0.29-2                       OK
+perl-List-AllUtils                     0.19-2                       OK
+perl-List-SomeUtils                    0.59-2                       OK
+perl-List-UtilsBy                      0.12-2                       OK
+perl-Log-Log4perl                      1.57-2                       OK
+perl-LWP-MediaTypes                    6.04-4                       OK
+perl-LWP-Protocol-https                6.11-1                       OK
+perl-MIME-Charset                      1.013.1-2                    OK
+perl-Module-Implementation             0.09-5                       OK
+perl-Module-Runtime                    0.016-4                      OK
+perl-Mozilla-CA                        20230821-1                   OK
+perl-MRO-Compat                        0.15-2                       OK
+perl-namespace-autoclean               0.29-4                       OK
+perl-namespace-clean                   0.27-5                       OK
+perl-Net-HTTP                          6.23-1                       OK
+perl-Net-SSLeay                        1.92-2                       OK
+perl-Number-Compare                    0.03-9                       OK
+perl-Package-Stash                     0.40-2                       OK
+perl-Package-Stash-XS                  0.30-2                       OK
+perl-Params-Validate                   1.31-2                       OK
+perl-Params-ValidationCompiler         0.31-2                       OK
+perl-Parse-RecDescent                  1.967015-5                   OK
+perl-Regexp-Common                     2017060201-5                 OK
+perl-Role-Tiny                         2.002004-3                   OK
+perl-Scalar-List-Utils                 1.63-2                       OK
+perl-Sort-Key                          1.33-5                       OK
+perl-Specio                            0.48-2                       OK
+perl-Sub-Exporter-Progressive          0.001013-5                   OK
+perl-Sub-Identify                      0.14-5                       OK
+perl-Sub-Quote                         2.006008-2                   OK
+perl-TermReadKey                       2.38-4                       OK
+perl-Test-Fatal                        0.017-2                      OK
+perl-Text-BibTeX                       0.89-2                       OK
+perl-Text-CSV                          2.03-1                       OK
+perl-Text-CSV_XS                       1.52-1                       OK
+perl-Text-Glob                         0.11-5                       OK
+perl-Text-Roman                        3.5-5                        OK
+perl-Tie-Cycle                         1.227-2                      OK
+perl-TimeDate                          2.33-3                       OK
+perl-Tk                                804.036-2                    OK
+perl-Try-Tiny                          0.31-2                       OK
+perl-Unicode-LineBreak                 2019.001-4                   OK
+perl-URI                               5.21-1                       OK
+perl-Variable-Magic                    0.63-2                       OK
+perl-WWW-RobotRules                    6.02-9                       OK
+perl-XML-LibXML                        2.0209-1                     OK
+perl-XML-LibXML-Simple                 1.01-3                       OK
+perl-XML-LibXSLT                       2.002001-2                   OK
+perl-XML-NamespaceSupport              1.12-5                       OK
+perl-XML-Parser                        2.46-4                       OK
+perl-XML-SAX                           1.02-4                       OK
+perl-XML-SAX-Base                      1.09-5                       OK
+perl-XML-Writer                        0.900-3                      OK
+perl-YAML-Tiny                         1.74-2                       OK
+perl_autorebase                        5.36.1-1                     OK
+perl_base                              5.36.1-1                     OK
+ping                                   2.4-1                        OK
+pkg-config                             2.0.3-1                      OK
+pkgconf                                2.0.3-1                      OK
+poppler-data                           0.4.10-1                     OK
+preview-latex                          13.2-1                       OK
+procps-ng                              4.0.4-1                      OK
+publicsuffix-list-dafsa                20230709-1                   OK
+python                                 3.0.0-1                      OK
+python-pip-wheel                       19.2.3-1                     OK
+python-setuptools-wheel                41.2.0-1                     OK
+python-wheel-wheel                     0.37.1-1                     OK
+python2                                2.7.18-4                     OK
+python2-devel                          2.7.18-4                     OK
+python27                               2.7.18-4                     OK
+python27-cffi                          1.14.0-1                     OK
+python27-chardet                       3.0.4-2                      OK
+python27-devel                         2.7.18-4                     OK
+python27-imaging                       5.4.1-1                      OK
+python27-olefile                       0.46-2                       OK
+python27-pip                           20.3.3-2                     OK
+python27-ply                           3.11-2                       OK
+python27-pycparser                     2.20-1                       OK
+python27-pygments                      2.3.1-1                      OK
+python27-setuptools                    41.2.0-1                     OK
+python3                                3.9.10-1                     OK
+python3-devel                          3.9.10-1                     OK
+python38                               3.8.16-1                     OK
+python38-babel                         2.12.1-1                     OK
+python38-chardet                       4.0.0-2                      OK
+python38-docutils                      0.18.1-1                     OK
+python38-idna                          3.3-1                        OK
+python38-imagesize                     1.3.0-1                      OK
+python38-imaging                       8.1.2-1                      OK
+python38-iniconfig                     2.0.0-1                      OK
+python38-jinja2                        3.1.2-1                      OK
+python38-markupsafe                    2.1.2-1                      OK
+python38-olefile                       0.46-3                       OK
+python38-packaging                     21.3-1                       OK
+python38-pip                           23.0.1-1                     OK
+python38-platformdirs                  3.1.1-1                      OK
+python38-pluggy                        1.0.0-1                      OK
+python38-pygments                      2.10.0-1                     OK
+python38-pyparsing                     3.0.6-1                      OK
+python38-pytest                        7.3.0-1                      OK
+python38-requests                      2.27.1-1                     OK
+python38-setuptools                    67.6.0-1                     OK
+python38-six                           1.16.0-1                     OK
+python38-snowballstemmer               2.2.0-1                      OK
+python38-sphinx                        4.4.0-1                      OK
+python38-sphinxcontrib-serializinghtml 1.1.5-1                      OK
+python38-toml                          0.10.2-2                     OK
+python38-urllib3                       1.26.7-1                     OK
+python39                               3.9.16-1                     OK
+python39-attrs                         22.2.0-1                     OK
+python39-babel                         2.12.1-1                     OK
+python39-chardet                       4.0.0-2                      OK
+python39-devel                         3.9.16-1                     OK
+python39-distlib                       0.3.6-1                      OK
+python39-docutils                      0.18.1-1                     OK
+python39-filelock                      3.9.0-1                      OK
+python39-idna                          3.3-1                        OK
+python39-imagesize                     1.3.0-1                      OK
+python39-imaging                       8.4.0-1                      OK
+python39-iniconfig                     2.0.0-1                      OK
+python39-jinja2                        3.1.2-1                      OK
+python39-markupsafe                    2.1.2-1                      OK
+python39-olefile                       0.46-3                       OK
+python39-packaging                     21.3-1                       Incomplete
+python39-pip                           23.0.1-1                     OK
+python39-platformdirs                  3.1.1-1                      OK
+python39-pluggy                        1.0.0-1                      OK
+python39-py                            1.11.0-1                     OK
+python39-pygments                      2.10.0-1                     OK
+python39-pyparsing                     3.0.6-1                      OK
+python39-pytest                        7.3.0-1                      OK
+python39-requests                      2.27.1-1                     OK
+python39-setuptools                    67.6.0-1                     OK
+python39-six                           1.16.0-1                     OK
+python39-snowballstemmer               2.2.0-1                      OK
+python39-sphinx                        4.4.0-1                      OK
+python39-sphinxcontrib-serializinghtml 1.1.5-1                      OK
+python39-toml                          0.10.2-2                     OK
+python39-urllib3                       1.26.7-1                     OK
+python39-virtualenv                    20.21.0-1                    OK
+rebase                                 4.6.6-1                      OK
+rpm                                    4.18.0-1                     OK
+rpm-build                              4.18.0-1                     OK
+rpm-devel                              4.18.0-1                     OK
+rsync                                  3.2.7-1                      OK
+ruby                                   3.2.2-2                      OK
+ruby-builder                           3.2.3-1                      OK
+ruby-did_you_mean                      1.2.2-1                      OK
+ruby-minitest                          5.10.3-1                     OK
+ruby-rake                              12.3.2-1                     OK
+ruby-rdoc                              6.5.0-1                      OK
+rubygems                               3.4.12-1                     OK
+run                                    1.3.4-2                      OK
+sed                                    4.9-1                        OK
+shared-mime-info                       2.2-1                        OK
+sqlite3                                3.34.0-1                     OK
+sqlite3-vfslog                         3.34.0-1                     OK
+tar                                    1.35-1                       OK
+tcl                                    8.6.12-1                     OK
+tcl-tk                                 8.6.12-1                     OK
+terminfo                               6.4-3.20230114               OK
+terminfo-extra                         6.4-3.20230114               OK
+texinfo                                7.0.3-3                      OK
+texlive                                20230313-2                   OK
+texlive-collection-basic               20230313-2                   OK
+texlive-collection-bibtexextra         20230313-1                   OK
+texlive-collection-binextra            20230313-1                   OK
+texlive-collection-latex               20230313-1                   OK
+texlive-collection-latexextra          20230313-1                   OK
+texlive-collection-latexrecommended    20230313-1                   OK
+texlive-collection-mathscience         20230313-1                   OK
+texlive-collection-pictures            20230313-1                   OK
+tig                                    2.5.5-1                      OK
+transfig                               3.2.9-1                      OK
+tzcode                                 2023c-1                      OK
+tzdata                                 2023c-1                      OK
+urw-base35-fonts                       20170801-5                   OK
+urw-base35-fonts-legacy                20170801-5                   OK
+util-linux                             2.33.1-2                     OK
+vim                                    8.2.4372-2                   OK
+vim-common                             8.2.4372-2                   OK
+vim-minimal                            8.2.4372-2                   OK
+w32api-headers                         11.0.1-1                     OK
+w32api-runtime                         11.0.1-1                     OK
+w3m                                    0.5.3-3                      OK
+wget                                   1.21.4-1                     OK
+which                                  2.20-2                       OK
+windows-default-manifest               6.4-2                        OK
+xorg-x11-fonts-dpi75                   7.6-2                        OK
+xxd                                    8.2.4372-2                   OK
+xz                                     5.4.5-1                      OK
+zlib-devel                             1.3-1                        OK
+zlib0                                  1.3-1                        OK
+zsh                                    5.8-1                        OK
+zstd                                   1.5.5-1                      OK
+
+*** Python pip freeze > requirement.txt
+absl-py==0.11.0
+aiohttp==3.8.4
+aiosignal==1.3.1
+appdirs==1.4.4
+appendfilename==2022.1.4.1
+args==0.1.0
+astroid==2.15.0
+async-timeout==4.0.2
+attrs==23.1.0
+autopep8==1.6.0
+beautifulsoup4==4.11.2
+build==0.10.0
+CacheControl==0.12.11
+certifi==2022.12.7
+charset-normalizer==3.1.0
+cleo==2.0.1
+click==7.1.2
+clint==0.5.1
+colorama==0.4.6
+crashtest==0.4.1
+cssselect==1.2.0
+date2name==2021.11.25.2
+dateparser==1.1.8
+deepl-fastapi==0.1.2
+deepl-scraper-pp==0.1.2
+dill==0.3.6
+distlib==0.3.6
+docstring-to-markdown==0.11
+dulwich==0.21.5
+EbookLib==0.17.1
+epub2txt==0.1.1
+executing==1.2.0
+fastapi==0.63.0
+filelock==3.12.0
+filetags==2023.11.10.1
+flake8==6.0.0
+frozenlist==1.3.3
+get-ppbrowser==0.1.3
+h11==0.14.0
+html5lib==1.1
+httpcore==0.12.3
+httpx==0.16.1
+idna==3.4
+importlib-metadata==6.6.0
+iniconfig==2.0.0
+install==1.3.5
+installer==0.7.0
+integratethis==2020.1.8.1
+isort==5.12.0
+jaraco.classes==3.2.3
+jedi==0.18.2
+jsonschema==4.17.3
+keyring==23.13.1
+lazy-object-proxy==1.9.0
+linetimer==0.1.5
+lockfile==0.12.2
+logzero==1.7.0
+lxml==4.9.2
+mccabe==0.7.0
+more-itertools==9.1.0
+Morfessor==2.0.6
+msgpack==1.0.5
+multidict==6.0.4
+nest-asyncio==1.5.6
+openai==0.27.5
+packaging==23.0
+parso==0.8.3
+pexpect==4.8.0
+Pillow==9.5.0
+pkginfo==1.9.6
+platformdirs==2.6.2
+pluggy==1.0.0
+poetry==1.4.2
+poetry-core==1.5.2
+poetry-plugin-export==1.3.1
+portalocker==2.7.0
+ptyprocess==0.7.0
+pycodestyle==2.10.0
+pydantic==1.10.7
+pydocstyle==6.2.3
+pyee==7.0.4
+pyflakes==3.0.1
+pylint==2.17.0
+pypiwin32==223
+pyppeteer2==0.2.2
+pyproject_hooks==1.0.0
+pyquery==1.4.3
+pyreadline==2.1
+pyrsistent==0.19.3
+pytest==7.3.1
+pytest-asyncio==0.14.0
+python-dateutil==2.8.2
+python-dotenv==0.15.0
+python-lsp-jsonrpc==1.0.0
+python-lsp-server==1.7.1
+pytoolconfig==1.2.5
+pytz==2023.3
+pywin32==306
+pywin32-ctypes==0.2.0
+rapidfuzz==2.15.1
+regex==2023.8.8
+requests==2.28.2
+requests-toolbelt==0.10.1
+rfc3986==1.5.0
+rope==1.7.0
+shellingham==1.5.0.post1
+six==1.16.0
+sklearn==0.0.post4
+sniffio==1.3.0
+snowballstemmer==2.2.0
+soupsieve==2.4
+starlette==0.13.6
+tkhtmlview==0.2.0
+toml==0.10.2
+tomlkit==0.11.6
+tqdm==4.65.0
+trove-classifiers==2023.5.2
+ttkbootstrap==1.10.1
+ttkwidgets==0.13.0
+typing_extensions==4.5.0
+tzdata==2023.3
+tzlocal==5.0.1
+ujson==5.7.0
+urllib3==1.26.15
+uvicorn==0.13.4
+virtualenv==20.21.1
+webencodings==0.5.1
+websockets==8.1
+whatthepatch==1.0.4
+wrapt==1.15.0
+yapf==0.32.0
+yarl==1.9.2
+youtube-comment-downloader==0.1.70
+zipp==3.15.0
+
+
+
+
+*** My Philosophy of Taking Notes
+昨晚想到的是
+开始记笔记的时候应该用最小的阻力去记忆笔记
+完成笔记的时候需要用最大的需要去做笔记
+两者都意味着能够完成笔记，并且笔记需要以其合适的方式出现
+
+开始记笔记的时候和完成笔记的时候，其实笔记的需要已经发生了变化，但集成性这个要求没有变化，恰恰是笔记重要性的变化，推动了集成性需要的形式的变化。
+
+开始的时候只要有记录就行，而这种层次的信息放在一个文件内最为适合
+完成的时候需要考虑信息检索的便利程度，而同样的integration要求，意味着需要集中在独立的笔记
+
+笔记无法持续，就是因为需求发生了变化，
+开始笔记的需求是最强烈的，而完成笔记的需求随着行动关注点的转移而减少
+
+
+
+Hi, this is Anabasis Xu, a technical writer and translator. This repository focuses on the technical side of technical writing, though I also write about other topics that I find relevant. For example, I find it helpful to sort out the technical side of reading great books, which leads to the various book protocols.
+
+I like both Emacs and Vim. I use Vim from within Emacs with Evil Mode, and Emacs within Visual Studio Code with VSpaceCode. My impression is that Emacs provides a superior editing experience, but Visual Studio Code is easier to set up.
+
+I write my notes with Denote, an Emacs package that follows consistent file metadata for note files. I lint my notes with Vale, which lints your prose with customizable styles. I use Vale with vale-vscode, as the VSpace interface makes it easier to filter linting reports and check which rule triggers a warning.
+
+Note-taking, like everything else, takes time. Managing these notes takes even more. As the number of notes grows, so does the complexity of managing them. This is why most note-taking philosophies do not work for most people.
+
+I believe the way to reduce the complexity that notes introduce is to take notes only when necessary, and only organize when necessary. I use a worklog.org for quick notes, which reduces note management to the minimum at the beginning. When some topics become too important to stay scattered in this worklog.org, then I collect them into this repository as an item of Today-I-Learned. Again, when I find TIL notes too simplistic, then I work on them further. The focus should always be on the work to do, not the note to take.
+**** quick notes
+**** til notes: 需要挖掘之前的笔记中可探索的部分
+**** long posts: 目前需要发表在medium
+主要是片段的组织
+

@@ -1,0 +1,33 @@
+#+TITLE:      curl save files
+#+DATE:       [2024-02-11 Sun 13:11]
+#+FILETAGS:   :cml:
+#+IDENTIFIER: 20240211T131133
+#+SOURCE: 
+
+
+
+
+curl命令有多种保存文件的方式，以下是一些常见的用法：
+* 指定文件地址和文件名
+保存在当前文件夹
+curl -L https://forum.freemdict.com/uploads/short-url/tqXIZFnHvuvye9nPuHVLBre2dR1.css -o test.css
+
+
+* 保存为原始文件名：
+curl -O <URL>
+bash复制成功复制代码
+这将会把下载的文件保存为原始的文件名，不会重命名。
+* 保存到标准输出：
+curl <URL> -o -
+bash复制成功复制代码
+这将会把下载的文件内容输出到标准输出（屏幕），而不保存成文件。
+* 追加保存文件：
+curl -o <filename> -a <URL>
+bash复制成功复制代码
+这将会把下载的文件内容追加到指定的文件中。
+
+
+* 保存为指定文件名：
+curl -o <filename> <URL>
+bash复制成功复制代码
+这将会把下载的文件保存为指定的文件名。

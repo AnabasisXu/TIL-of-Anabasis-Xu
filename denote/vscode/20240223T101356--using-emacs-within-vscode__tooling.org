@@ -6,13 +6,14 @@
 
 I recently started to learn web development with Emacs. Emmet-mode has been great, until one day it reports:
 
-```elisp
+#+begin_src emacs-lisp
 Debugger entered--Lisp error: (void-function first)
   (first expr)
   (if (first expr) (list (first expr) start end))
   (let* ((end (point)) (start (emmet-find-left-bound)) (line (buffer-substring-no-properties start end)) (expr (emmet-regex "\\([ \11]*\\)\\([^\n]+\\)" line 2))) (if (first expr) (list (first expr) start end)))
   emmet-expr-on-line()
-```
+#+end_src
+
 
 I just could not find anywhere in the emmet.el file that the function `first` is undefined. I tried loading the file with a clean setup with `runemacs -Q`, then I was surprised to find that it worked just fine. Eventually, it turns out that `first` should be `cl-first`, as with `second`, `third`, and so on. For the more recent versions of Emacs, there is a reminder that says "cl is obsolete" to encourage the user to change and replace it with `cl-lib`. Unfortunately, no such reminder exists for `first`.
 

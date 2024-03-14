@@ -1,11 +1,10 @@
-#+TITLE:      redhat style guide
+#+TITLE:      Red Hat Vale Style Guide
 #+DATE:       [2024-03-03 Sun 07:33]
 #+FILETAGS:   :techwriting:
 #+IDENTIFIER: 20240303T073312
 #+SOURCE: 
 
-Currently the only company that open sources its style guide and vale rules
-
+Why Red Hat? It is one of the most famous companies that use Vale; its style rules are well maintained and constantly updated. 
 
 Things to learn
 

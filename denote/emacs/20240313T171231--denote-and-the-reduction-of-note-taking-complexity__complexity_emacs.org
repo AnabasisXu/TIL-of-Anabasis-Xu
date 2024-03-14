@@ -1,0 +1,31 @@
+#+TITLE:      Denote and the Reduction of Note-taking Complexity
+#+DATE:       [2024-03-13 Wed 17:12]
+#+FILETAGS:   :complexity:emacs:
+#+IDENTIFIER: 20240313T171231
+#+SOURCE: 
+* The Complexity of Note-Taking
+Notes are just like codes. Without notes, you do not go quite far in any inquiry. Yet more notes also bring more trouble to the management. Over time, the problem of managing the complexity of notes will arise in any serious note-taking endeavor. 
+
+I see two kinds of complexity in any note-taking. The first appears at the beginning of note-taking, and the second appears when notes are retrieved and edited. 
+
+** Note Editing
+If you want to create your file quickly, you may end up with all kinds of naming schemes or no scheme at all. Alternatively, if you insist on a naming scheme and file format for notes, the time it takes and the mental overload it imposes make you less inclined to create notes. 
+
+The same applied to the renaming of notes. Renaming the file also updates the note property within the note file. 
+
+** Note discoverability
+At the minimum, the notes need to be searchable by tag and by title. This should be done without relying on further search tools.
+
+* The Denote Naming Scheme
+
+Denote deals with two kinds of complexity with one idea: a structured naming scheme and a consistent editing experience powered by Emacs. Operating in Emacs means that all these functions are only a few keystrokes away and the editing interface will be consistent anywhere.
+
+When starting to take notes, the naming and renaming of a note file is structured into title and tag editing, with the timestamp on the file name and properties within the file taken care of automatically. The same works for the editing process, in which you only need to pay attention to the title and the tag, and changes in the tile will apply to the property.
+
+In terms of note search, the title and tag can be searched separately with simple regular expressions: =_= for tags and =--= for titles. I use Swiper for searching and Loccur for filtering. 
+
+Denote also supports further tools to enhance discoverability: links to other notes and view backlinks. This makes the creation of meta-notes possible. Rather than accessing the files through the directory interface, notes themselves can be the customized interface with richer information. The naming scheme helps the creation of linking by making the note searching easier. 
+
+
+
+

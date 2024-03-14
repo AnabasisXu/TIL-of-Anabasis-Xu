@@ -4,7 +4,7 @@ Hi, this is Anabasis Xu, a technical writer and translator. This repository focu
 
 I like both Emacs and Vim. I use Vim from within Emacs with [Evil Mode](https://github.com/emacs-evil/evil), and Emacs within Visual Studio Code with [VSpaceCode](https://github.com/VSpaceCode/VSpaceCode). My impression is that Emacs provides a superior editing experience, but Visual Studio Code is easier to set up.  
 
-I write my notes with [Denote](https://protesilaos.com/emacs/denote), an Emacs package that follows consistent file metadata for note files. I lint my notes with [Vale](https://github.com/errata-ai/vale), which lints your prose with customizable styles. I use Vale with [vale-vscode](https://github.com/chrischinchilla/vale-vscode), as the VSpace interface makes it easier to filter linting reports and check which rule triggers a warning.
+I write my notes with [Denote](https://protesilaos.com/emacs/denote), an Emacs package that streamlines note-taking with a consistent naming scheme. I check my notes with [Vale](https://github.com/errata-ai/vale), which lints my prose with customizable styles. I use Vale with [vale-vscode](https://github.com/chrischinchilla/vale-vscode), as the VSpace interface makes it easier to filter linting reports and check which rule triggers a warning.
 
 Note-taking, like everything else, takes time. Managing these notes takes even more. As the number of notes grows, so does the complexity of managing them. This is why most note-taking philosophies do not work for most people.
 

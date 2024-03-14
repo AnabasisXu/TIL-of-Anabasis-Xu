@@ -1,6 +1,6 @@
 #+TITLE:      Emacs on Android
 #+DATE:       [2024-01-29 Mon 21:43]
-#+FILETAGS:   :emacs:
+#+FILETAGS:   :android:emacs:
 #+IDENTIFIER: 20240129T214316
 #+SOURCE: 
 

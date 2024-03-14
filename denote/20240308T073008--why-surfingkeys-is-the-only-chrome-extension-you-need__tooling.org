@@ -1,4 +1,4 @@
-#+TITLE:      Why Surfingkeys is the only Chrome extension you need
+#+TITLE:      Why Surfingkeys is the only Chrome Extension You Need
 #+DATE:       [2024-03-08 Fri 07:30]
 #+FILETAGS:   :tooling:
 #+IDENTIFIER: 20240308T073008

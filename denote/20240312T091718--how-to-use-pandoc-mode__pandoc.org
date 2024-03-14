@@ -1,0 +1,45 @@
+#+TITLE:      How to Use Pandoc-Mode
+#+DATE:       [2024-03-12 Tue 09:17]
+#+FILETAGS:   :pandoc:
+#+IDENTIFIER: 20240312T091718
+#+SOURCE: 
+* 
+One problem with writing with the Denote package of Emacs is that the files tends to be quite long: there are time stamp, file name, and tags. Open an Eshell terminal and type the file name is not going to be effcient. So I need a better integration of pandoc within Emacs. 
+
+The document of pandoc-mode contain no exmaple, making it quite confusing where to start.
+
+I tried pandodc-run-pandc, and it says convertion successful, yet no file is to be found. Then I try =pandoc-view-output-buffer= and then it is not complete at all. 
+
+So I need to set the input and output format. It leads to error message. 
+
+
+I need to automate the following actions:
+
+Convert .org file to common markdown
+Set pandoc-set-wrap to preserve
+
+but I just could not do it
+
+
+
+no way to set up in the form of elisp
+* pandoc-data-dir
+pandoc-data-dir is a variable defined in ‘pandoc-mode-utils.el’.
+
+Its value is "d:/HOME/.emacs.d/etc/pandoc-mode/"
+Original value was 
+"~/.emacs.d/pandoc-mode/"
+
+Default ‘pandoc-mode’ data dir.
+This is where ‘pandoc-mode’ looks for global settings files.
+
+  You can customize this variable.
+* TODO global and default setting
+global is for one kind of output
+default is for all kind of output
+
+The problem is that I can not load global setting
+What if default and global are in conflict
+
+how to load global setting
+how to load default setting
